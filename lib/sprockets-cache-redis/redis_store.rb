@@ -18,7 +18,7 @@ module Sprockets
 
       private 
       def path_for(key)
-        key_prefix + ':' + ::Digest::MD5.hexdigest(key)
+        @key_prefix + ':' + ::Digest::MD5.hexdigest(key)
       end
     end
   end
