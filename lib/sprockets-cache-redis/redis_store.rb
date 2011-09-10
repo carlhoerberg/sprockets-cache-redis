@@ -9,7 +9,8 @@ module Sprockets
       end
 
       def [](key)
-        Marshal.load @redis.get(path_for(key))
+        data = @redis.get path_for(key)
+        Marshal.load data if data
       end
 
       def []=(key, value)
