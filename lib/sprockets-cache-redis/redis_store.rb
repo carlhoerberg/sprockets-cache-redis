@@ -1,5 +1,3 @@
-require 'digest/md5'
-
 module Sprockets
   module Cache
     # A simple Redis cache store.
@@ -21,11 +19,12 @@ module Sprockets
       # Save value to cache
       def []=(key, value)
         @redis.set path_for(key), Marshal.dump(value)
+        value
       end
 
       private 
       def path_for(key)
-        @key_prefix + ':' + ::Digest::MD5.hexdigest(key)
+        "#{@key_prefix}:#{key}"
       end
     end
   end
