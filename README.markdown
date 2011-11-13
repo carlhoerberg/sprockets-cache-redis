@@ -10,7 +10,6 @@ Gemfile:
 
     gem 'sprockets'
     gem 'sprockets-cache-redis'
-    gem 'redis'
     ...
 
 config.ru:
