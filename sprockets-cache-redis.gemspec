@@ -5,7 +5,7 @@ require "sprockets-cache-redis/version"
 Gem::Specification.new do |s|
   s.name        = "sprockets-cache-redis"
   s.version     = Sprockets::Cache::Redis::VERSION
-  s.authors     = ["Carl Hörberg"]
+  s.authors     = ["Carl Hörberg", "Devio, LLC"]
   s.email       = ["carl.hoerberg@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{A Redis cache store for Sprockets}

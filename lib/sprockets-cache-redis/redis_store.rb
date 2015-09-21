@@ -1,5 +1,5 @@
 module Sprockets
-  module Cache
+  class Cache
     # A simple Redis cache store.
     #
     #     environment.cache = Sprockets::Cache::RedisStore.new($redis)
